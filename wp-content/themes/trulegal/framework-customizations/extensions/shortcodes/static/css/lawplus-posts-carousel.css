@@ -1,0 +1,98 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Post Carousel
+ *
+ *
+ *
+ */
+
+
+/*----------  1. Post Carousel  ----------*/
+
+.slz-carousel-wrapper .slz-carousel {
+	padding-bottom: 50px;
+	margin: 0;
+}
+
+.slz-carousel-wrapper .slick-dotted.slz-carousel {
+	padding-bottom: 70px;
+}
+
+.slz-carousel-wrapper .slick-dots {
+	padding-left: 0;
+	bottom: 25px;
+}
+
+.slz-carousel-wrapper .slick-dots li button:before {
+}
+
+.slz-carousel-wrapper .slick-dots li button:hover:before {
+}
+
+.slz-carousel-wrapper .slick-arrow {
+    font-size: 14px;
+    top: auto;
+    bottom: 0px;
+    border: none;
+    border-radius: 0;
+    padding: 5px 0;
+    color: #304771;
+    border-bottom: 2px solid #304771;
+    opacity: 1;
+    visibility: visible;
+}
+
+.slz-carousel-wrapper .slick-arrow:hover {
+	color: #c8ac49;
+	border-color: #c8ac49;
+	background-color: transparent;
+}
+
+.slz-carousel-wrapper .btn-prev {
+	left: calc(50% - 10px);
+	transform: translateX(-100%);
+}
+
+.slz-carousel-wrapper .btn-prev i {
+	padding-right: 5px;
+}
+
+.slz-carousel-wrapper:hover .btn-prev {
+	left: calc(50% - 10px);
+}
+
+.slz-carousel-wrapper .btn-prev:after {
+	content: "|";
+	position: absolute;
+	right: -12px;
+	color: #bfbfbf;
+}
+
+.slz-carousel-wrapper .btn-next {
+	transform: translateX(100%);
+	left: auto;
+	right: calc(50% - 10px);
+}
+
+.slz-carousel-wrapper .btn-next i {
+	padding-left: 5px;
+}
+
+.slz-carousel-wrapper:hover .btn-next {
+	right: calc(50% - 10px);
+}
+
+.slz-carousel-wrapper .btn-prev .icons:before {
+	content: '\f177';
+}
+
+.slz-carousel-wrapper .btn-next .icons:before {
+	content: '\f178';
+}
+.slz-carousel-wrapper .btn .icons {
+	font-size: 14px;
+}

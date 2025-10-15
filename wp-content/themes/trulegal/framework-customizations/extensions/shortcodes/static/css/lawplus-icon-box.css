@@ -1,0 +1,485 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Icon Box Layout 1 
+ *       - 1.1. Icon Box 1 Horizontal Normal
+ *       - 1.2. Icon Box 1 Horizontal Has Number
+ *       - 1.3. Icon Box 1 Vertical Normal
+ *       - 1.4. Icon Box 1 Vertical Has Number
+ *    2. Icon Box Layout 2
+ *    3. Icon Box Animation
+ *       - 3.0. Animation Trigger
+ *       - 3.1. Animation 1
+ *       - 3.2. Animation 2 
+ *    4. List Icon Box
+ *    5. Responsive
+ *
+ *
+ *
+ */
+
+/*============================================
+=            1. Icon Box Layout 1            =
+============================================*/
+
+    /*----------  1.1 Icon Box 1 Horizontal Normal ----------*/
+        .slz-icon-box-1 .icon-cell {
+            position: relative;
+        }
+
+        .slz-icon-box-1 .icon-cell .line {
+            position: absolute;
+            width: 2px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.1);
+            top: 0;
+            right: -14px;
+        }
+
+        .slz-icon-box-1 .wrapper-icon {
+            border: none;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .slz-icon-box-1 .wrapper-icon .slz-icon {
+            font-size: 50px;
+            color: #9ca1a9;
+        }
+
+        .slz-icon-box-1:hover .wrapper-icon .slz-icon {
+            color: #c8ac48;
+        }
+
+        .slz-icon-box-1 .wrapper-icon.bg-image {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .slz-icon-box-1:hover .wrapper-icon.bg-image {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+        }
+
+        .slz-icon-box-1 .content-cell {
+            padding-left: 25px;
+        }
+
+        .slz-icon-box-1 .wrapper-info {
+            color: #304771;
+        }
+
+        .slz-icon-box-1 .wrapper-info .title {
+            color: inherit;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .slz-icon-box-1 .wrapper-info .description {
+            color: inherit;
+            opacity: 0.75;
+            margin-bottom: 5px;
+            height: 48px;
+            overflow: hidden;
+        }
+
+        .slz-icon-box-1 .wrapper-info .slz-btn {
+            background-color: transparent;
+            padding: 0;
+            line-height: 1;
+            text-transform: capitalize;
+            color: #c8ac48;
+            border: none;
+            height: auto;
+            min-width: 0;
+        }
+
+        .slz-icon-box-1 .wrapper-info .slz-btn:before {
+            content: none;
+        }
+
+        .slz-icon-box-1 .wrapper-info .slz-btn:after {
+            width: auto;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            right: 100%;
+            opacity: 0;
+            background-color: #c8ac48;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .slz-icon-box-1 .wrapper-info .slz-btn:hover:after,
+        .slz-icon-box-1 .wrapper-info .slz-btn:focus:after {
+            right: 0;
+            opacity: 1;
+        }
+
+        .slz-icon-box-1 .wrapper-info .slz-btn:hover,
+        .slz-icon-box-1 .wrapper-info .slz-btn:focus {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
+
+        .slz-icon-box-1 .wrapper-info .slz-btn .icons:before {
+            content: '\f178';
+        }
+
+    /*----------  1.2 Icon Box 1 Horizontal Has Number ----------*/
+        .sc_icon_box.has_number .slz-icon-box-1 .icon-cell .line {
+            height: 90px;
+        }
+
+    /*----------  1.3. Icon Box 1 Vertical Normal  ----------*/
+        .slz-icon-box-1.style-vertical {
+            padding: 40px;
+        }
+
+        .slz-icon-box-1.style-vertical .number:before {
+            background-color: #c8ac48;
+        }
+
+        .slz-icon-box-1.style-vertical .icon-cell .line {
+            width: 70px;
+            height: 2px;
+            margin: 20px auto 0 auto;
+            background-color: rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: auto;
+            right: auto;
+        }
+
+        .slz-icon-box-1.style-vertical .content-cell {
+            padding-top: 20px;
+        }
+
+        .slz-icon-box-1.style-vertical .wrapper-info .title {
+            margin-bottom: 3px;
+        }
+
+        .slz-icon-box-1.style-vertical .wrapper-info .description {
+            margin-bottom: 0;
+        }
+
+        .slz-icon-box-1.style-vertical .wrapper-info .slz-btn {
+            margin-top: 10px;
+            opacity: 0;
+            visibility: hidden;
+            bottom: -10px;
+        }
+
+    /*----------  1.4. Icon Box 1 Vertical Has Number  ----------*/
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical {
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical .icon-cell .line {
+            height: 2px;
+        }
+
+/*=======  End of Icon Box Layout 1  =======*/
+
+
+/*============================================
+=            2. Icon Box Layout 2            =
+============================================*/
+
+    .slz-icon-box-2 {
+        padding: 0;
+    }
+    
+    .slz-icon-box-2 .icon-cell {
+        display: table;
+        width: 100%;
+        position: relative;
+    }
+    
+    .slz-icon-box-2 .icon-cell .number {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 1;
+        padding-bottom: 2px;
+        display: table-cell;
+        width: 40px;
+    }
+    
+    .slz-icon-box-2 .icon-cell .number + .wrapper-icon {
+        padding-left: 30px;
+    }
+    
+    .slz-icon-box-2 .wrapper-icon {
+        height: 35px;
+        line-height: 1;
+        margin-right: 5px;
+        display: table-cell;
+        width: 40px;
+    }
+    
+    .slz-icon-box-2 .wrapper-icon .slz-icon {
+        color: #9ca1a9;
+        font-size: 35px;
+    }
+    
+    .slz-icon-box-2 .title {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Libre Baskerville', serif;
+        color: #304771;
+        text-transform: uppercase;
+        vertical-align: bottom;
+        padding-left: 5px;
+        line-height: 1;
+        display: table-cell;
+    }
+    
+    .slz-icon-box-2 .wrapper-info .description {
+        margin-bottom: 0;
+    }
+    
+    .slz-icon-box-2 .wrapper-info .slz-btn {
+        margin-top: 15px;
+        background-color: transparent;
+        padding: 0;
+        line-height: 1;
+        text-transform: capitalize;
+        color: #c8ac48;
+        border: none;
+        height: auto;
+        min-width: 0;
+    }
+    
+    .slz-icon-box-2 .wrapper-info .slz-btn:before {
+        content: none;
+    }
+    
+    .slz-icon-box-2 .wrapper-info .slz-btn:after {
+        width: auto;
+        height: 1px;
+        bottom: -4px;
+        left: 0;
+        right: 100%;
+        opacity: 0;
+        background-color: #c8ac48;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    .slz-icon-box-2 .wrapper-info .slz-btn:hover:after,
+    .slz-icon-box-2 .wrapper-info .slz-btn:focus:after {
+        right: 0;
+        opacity: 1;
+    }
+    
+    .slz-icon-box-2 .wrapper-info .slz-btn:hover,
+    .slz-icon-box-2 .wrapper-info .slz-btn:focus {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    
+    .slz-icon-box-2 .wrapper-info .slz-btn .icons:before {
+        content: '\f178';
+    }
+
+/*=======  End of Icon Box Layout 2  =======*/
+
+
+/*=============================================
+=            3. Icon Box Animation            =
+=============================================*/
+
+    /*----------  3.0. Animation Trigger  ----------*/
+        .sc_icon_box .slz-icon-box-1,
+        .sc_icon_box .slz-icon-box-1 .icon-cell .line,
+        .sc_icon_box .slz-icon-box-1 .icon-cell .number,
+        .sc_icon_box .slz-icon-box-1 .icon-cell .number:before,
+        .sc_icon_box .slz-icon-box-1 .wrapper-icon .slz-icon,
+        .sc_icon_box .slz-icon-box-1 .wrapper-info .title {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+    /*----------  3.1. Animation 1  ----------*/
+        .sc_icon_box.has_number .slz-icon-box-1:hover .icon-cell .number {
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical:hover .icon-cell .number {
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #c8ac48;
+        }
+    /*----------  3.2. Animation 2  ----------*/
+        .slz-icon-box-1.style-vertical:hover .wrapper-info .slz-btn {
+            opacity: 1;
+            visibility: visible;
+            bottom: 0;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical {
+            padding: 0 35px;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical:hover {
+            padding: 35px;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical:hover .title {
+            margin-top: 15px;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical:hover .icon-cell .number {
+            font-size: 0;
+            margin-bottom: 0;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical:hover .icon-cell .number:before {
+            height: 0;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1.style-vertical:hover .wrapper-icon .slz-icon {
+            color: #c8ac48;
+        }
+
+        .sc_icon_box.has_number .slz-icon-box-1:hover .icon-cell,
+        .sc_icon_box.has_number .slz-icon-box-1:hover .content-cell {
+            text-shadow: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
+
+/*=======  End of Icon Box Animation  =======*/
+
+/*========================================
+=            4. List Icon Box            =
+========================================*/
+
+    .sc_icon_box .slz-list-block {
+        margin: 0;
+    }
+
+    .sc_icon_box .slz-list-block .item {
+        padding: 0;
+    }
+
+/*=======  End of List Icon Box  =======*/
+
+
+/*=====================================
+=            5. Responsive            =
+=====================================*/
+    @media screen and (max-width: 1024px) {
+        .slz-icon-box-1.style-vertical {
+            padding: 20px;
+        }
+
+        .sc_icon_box .slz-list-block.slz-column-4 > .item {
+            width: 50%;
+        }
+
+        .sc_icon_box .slz-list-block.slz-column-4 .item:nth-child(-n + 4) {
+            margin-top: 30px;
+        }
+
+        .sc_icon_box .slz-list-block.slz-column-4 .item:nth-child(-n + 2) {
+            margin-top: 0;
+        }
+
+        .sc_icon_box .slz-list-block .item {
+            padding: 0;
+        }
+
+        .slz-icon-box-1.style-vertical .wrapper-info .slz-btn {
+            bottom: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .sc_icon_box .slz-list-block.slz-column-3 > .item {
+            width: 33.3%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .sc_icon_box .slz-list-block {
+            margin: 0 -15px;
+        }
+
+        .sc_icon_box .slz-list-block.slz-column-3 > .item {
+            width: 50%;
+        }
+
+        .sc_icon_box .slz-list-block .item {
+            padding: 0 15px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .sc_icon_box .slz-list-block {
+            margin: 0 -10px;
+        }
+
+        .sc_icon_box .slz-list-block .item {
+            padding: 0 10px;
+        }
+
+        .slz-icon-box-1.style-vertical {
+            padding: 20px 15px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .sc_icon_box .slz-list-block.slz-column-4 > .item,
+        .sc_icon_box .slz-list-block.slz-column-3 > .item {
+            width: 100%;
+        }
+
+        .sc_icon_box .slz-list-block.slz-column-4 > .item:first-child,
+        .sc_icon_box .slz-list-block.slz-column-3 > .item:first-child {
+            margin-top: 0;
+        }
+
+        .slz-icon-box-1 .slz-btn,
+        .slz-icon-box-2 .slz-btn {
+            display: inline-block;
+            max-width: none;
+        }
+
+    }
+    @media screen and (max-width: 414px) {
+        .slz-icon-box-1 {
+            padding: 20px 0;
+        }
+
+        .slz-icon-box-1.style-vertical {
+            padding: 20px 30px;
+        }
+    }
+
+/*=======  End of Responsive  =======*/

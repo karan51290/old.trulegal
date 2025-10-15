@@ -1,0 +1,54 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Map
+ *    2. Responsive
+ *
+ *
+ *
+ */
+
+
+/*----------  1. Map  ----------*/
+ 	.slz-map-01 .office-wrapper {
+ 		transform: none;
+ 		-webkit-transform: none;
+ 		-ms-transform: none;
+ 		-o-transform: none;
+ 		margin-top: 20px;
+ 	}
+ 	.slz-map-01 .office-list {
+ 		background-color: #c8ac48;
+ 		max-height: 350px;
+ 	}
+ 	.slz-map-01 .office-name {
+ 		color: #304771;
+ 		font-weight: 700;
+ 	}
+/*----------  2. Responsive  ----------*/
+ 	@media screen and (max-width: 768px) {
+        .slz-map-01 {
+            height: 400px;
+        }
+ 	}
+ 	@media screen and (max-width: 767px) {
+ 		.slz-map-01 .office-list {
+			padding: 40px 30px;
+ 		}
+ 	}
+    @media screen and (max-width: 600px) {
+        .slz-map-01 {
+            height: 300px;
+        }
+        .slz-map-01 #map-01 {
+        	position: relative;
+        	height: 100%
+        }
+        .slz-map-01 .office-wrapper {
+        	width: 100%;
+        	margin-bottom: 100px;
+        }
+ 	}

@@ -1,0 +1,169 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Counter 
+ *    2. Counter Left
+ *    3. Counter Right
+ *    4. Counter Center
+ *
+ *
+ *
+ */
+
+
+/*----------  1. Counter  ----------*/
+
+    .slz-counter-item-1 .line {
+        background-color: rgba(0,0,0,0.15);
+    }
+    .slz-counter-item-1 .icon-cell {
+        color: #c8ac48;
+    }
+    .slz-counter-item-1 .img-cell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 75px;
+    }
+    .slz-counter-item-1 .wrapper-icon {
+        font-size: 70px;
+    }
+    .slz-counter-item-1 .content-cell .number {
+        font-size: 48px;
+        font-weight: 900;
+        color: #304771;
+        letter-spacing: 3px;
+        display: inline-block;
+    }
+    .slz-counter-item-1 .content-cell .suffix {
+        font-size: 35px;
+        line-height: 48px;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 700;
+    }
+    .slz-counter-item-1 .content-cell .title {
+        margin-top: 5px;
+        color: #304771;
+        opacity: 0.85;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        text-align: inherit;
+    }
+
+    .slz-counter-item-1 .content-cell .line + .title {
+        margin-top: 0;
+    }
+/*----------  2. Counter Left  ----------*/
+    .slz-counter-item-1.counter-left .icon-cell {
+        width: 75px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    .slz-counter-item-1.counter-left .img-cell {
+        padding-right: 10px;
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    .slz-counter-item-1.counter-left .content-cell {
+        padding-left: 10px;
+    }
+/*----------  3. Counter Right  ----------*/
+    .slz-counter-item-1.counter-right {
+        direction: rtl;
+    }
+    .slz-counter-item-1.counter-right .icon-cell {
+        width: 75px;
+        padding-left: 10px;
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        float: none;
+    }
+    .slz-counter-item-1.counter-right .img-cell {
+        float: right;
+        padding-left: 10px;
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        float: none;
+    }
+    .slz-counter-item-1.counter-right .content-cell {
+        float: none;
+    }
+
+/*----------  4. Counter Center  ----------*/
+    .slz-counter-item-1.counter-center .icon-cell {
+        width: 75px;
+        margin: 0 auto;
+    }
+    .slz-counter-item-1.counter-center .img-cell {
+        display: block;
+        margin: 0 auto;
+    }
+    .slz-counter-item-1.counter-center .img-cell + .content-cell {
+        margin-top: 15px;
+    }
+
+/*=====================================
+=            5. Responsive            =
+=====================================*/
+    @media screen and (max-width: 1024px) {
+
+        .sc_counter.slz-list-block.slz-column-4 > .item {
+            width: 50%;
+        }
+
+        .sc_counter.slz-list-block.slz-column-4 .item:nth-child(-n + 4) {
+            margin-top: 30px;
+        }
+
+        .sc_counter.slz-list-block.slz-column-4 .item:nth-child(-n + 2) {
+            margin-top: 0;
+        }
+
+        .slz-counter-item-1.counter-left,
+        .slz-counter-item-1.counter-right {
+            width: auto;
+            margin: 0 auto;
+            min-width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .slz-counter-item-1.counter-center {
+            padding: 15px;
+        }
+        
+    }
+
+    @media screen and (max-width: 767px) {
+        .slz-counter-item-1 .content-cell .number {
+            font-size: 36px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        
+        .slz-counter-item-1 .img-cell {
+            width: 60px;
+        }
+
+        .slz-counter-item-1 .img-cell img {
+            max-height: 50px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .sc_counter.slz-list-block.slz-column-4 > .item {
+            width: 100%;
+        }
+
+        .sc_counter.slz-list-block.slz-column-4 .item:nth-child(-n + 2),
+        .sc_counter.slz-list-block.slz-column-4 .item:nth-child(-n + 4) {
+            margin-top: 20px;
+        }
+
+        .sc_counter.slz-list-block.slz-column-4 .item:first-child {
+            margin-top: 0;
+        }
+    }
+
+/*=======  End of Responsive  =======*/

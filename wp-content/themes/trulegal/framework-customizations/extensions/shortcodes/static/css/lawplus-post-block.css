@@ -1,0 +1,122 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Post Block
+ *
+ *
+ *
+ */
+
+/*----------  1. Post Block  ----------*/
+
+    .block-quote-wrapper .block-quote p {
+        margin-bottom: 15px;
+    }
+
+    .sc_portfolio_list .slz-block-item-01 .date,
+    .sc_portfolio_list .slz-block-item-01 .block-info {
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .sc_portfolio_list .slz-block-item-01 .block-info li a {
+        line-height: 24px;
+    }
+
+    .sc_portfolio_list .slz-block-item-01 .date + .block-info li {
+        margin-left: 20px;
+    }
+
+    .sc_portfolio_list .slz-block-item-01 .date {
+        margin-bottom: 5px;
+    }
+    .sc_portfolio_list .slz-block-item-01 .date:before {
+        content: '\f073';
+        font-family: 'FontAwesome';
+        margin-right: 5px;
+    }
+    .sc_portfolio_list .slz-block-item-01 .block-info li .author:before {
+        content: '\f007';
+        font-family: 'FontAwesome';
+        margin-right: 5px;
+    }
+
+    .slz-list-block .slz-pagination {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .slz-template-01 .main-layout .block-title,
+    .slz-template-02 .main-layout .block-title {
+        font-size: 24px;
+        color: #304771;
+    }
+
+    .slz-template-01 .main-layout .block-title:hover,
+    .slz-template-02 .main-layout .block-title:hover,
+    .slz-template-01 .list-layout .block-title:hover,
+    .slz-template-02 .list-layout .block-title:hover {
+        color: #c8ac48;
+    }
+
+    .slz-template-01 .list-layout .block-title,
+    .slz-template-02 .list-layout .block-title {
+        font-size: 16px;
+        color: #304771;
+    }
+
+    .slz-template-01 .main-layout .block-content,
+    .slz-template-02 .main-layout .block-content {
+        background-color: #fff;
+        padding: 25px 0 0 0;
+    }
+
+    .slz-template-01 .list-layout .block-content,
+    .slz-template-02 .list-layout .block-content {
+        background-color: #fff;
+    }
+
+
+    .slz-template-01 .list-layout .slz-block-item-01.style-2 .block-image + .block-content,
+    .slz-template-02 .list-layout .slz-block-item-01.style-2 .block-image + .block-content {
+        padding: 5px 15px; 
+    }
+
+    .slz-template-01 .list-layout .slz-block-item-01 .block-content,
+    .slz-template-02 .list-layout .slz-block-item-01 .block-content {
+        padding: 10px 0;
+    }
+
+    .slz-template-03 .slz-block-item-01.style-1 .block-content {
+        padding: 30px;
+    }
+
+    .slz-template-03 .slz-list-block > .item {
+        margin-top: 50px;
+    }
+    .slz-template-03 .slz-block-item-01.style-2 .block-image + .block-content,
+    .slz-template-03.block-right-left .slz-list-block .item:nth-child(even) .block-content {
+        padding: 25px 30px;
+    }
+
+    .vc_col-sm-6 .slz-list-block.slz-column-1 .slz-block-item-01.style-2 .block-title,
+    .vc_col-sm-6 .slz-list-block.slz-column-1 .slz-block-item-01 .block-title,
+    .vc_col-sm-4 .slz-list-block.slz-column-1 .slz-block-item-01.style-2 .block-title,
+    .vc_col-sm-4 .slz-list-block.slz-column-1 .slz-block-item-01 .block-title {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .list-layout .block-category,
+    .list-layout .block-info li a {
+        font-size: 14px;
+    }
+
+    .blog-detail-wrapper + .slz-post-footer, 
+    .blog-detail-wrapper + .clearfix + .slz-post-footer {
+        margin-top: 40px;
+    }

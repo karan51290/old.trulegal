@@ -1,0 +1,41 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Partner Carousel 
+ *    2. Responsive
+ *
+ *
+ *
+ */
+
+ /*----------  1. Partner Carousel  ----------*/
+
+ 	.slz-partner-carousel .slick-slide {
+ 		transition: all 0.3s ease;
+ 		-webkit-transition: all 0.3s ease;
+ 		-moz-transition: all 0.3s ease;
+ 		-o-transition: all 0.3s ease;
+ 	}
+ 	.slz-partner-carousel .slick-list:hover .slick-slide {
+ 		filter: grayscale(100%);
+ 		opacity: 0.5;
+ 	}
+ 	.slz-partner-carousel .slick-list .slick-slide:hover {
+ 		filter: grayscale(0);
+ 		opacity: 1;
+ 	}
+ /*----------  2. Responsive  ----------*/
+ 	@media screen and (max-width: 768px) {
+ 		.slz-partner-carousel .slick-arrow,
+ 		.slz-partner-carousel .slick-dots {
+ 			display: none!important;
+ 		}
+
+ 		.slz-partner-carousel .slick-dotted.slick-slider {
+ 			margin-bottom: 0;
+ 		}
+ 	}
+ 	

@@ -1,0 +1,445 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Team List Layout 01
+ *    2. Team List Layout 02
+ *    3. Team Tab 
+ *    4. Team Carousel
+ *    n. Responsive
+ *
+ *
+ *
+ */
+
+
+/*==============================================
+=            1. Team List Layout 01            =
+==============================================*/
+    
+    .slz-block-team-01 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slz-block-team-01 .team-img:before {
+        padding-top: 150%;
+    }
+
+    .slz-block-team-01 .team-body {
+        position: absolute;
+        padding: 0;
+        border: none;
+        bottom: 0;
+        left: 0;
+        background-color: #fafafa;
+        z-index: 4;
+    }
+
+    .slz-block-team-01 .team-body .main-info {
+        background-color: #c8ac48;
+        padding: 20px 0;
+        font-size: 0;
+    }
+
+    .slz-block-team-01 .team-body .title {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .slz-block-team-01 .team-body .title:hover {
+        color: #304771;
+    }
+
+    .slz-block-team-01 .team-body .position {
+        display: inline-block;
+        vertical-align: top;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .slz-block-team-01 .team-body .title + .position {
+        margin: 0 0 0 7px;
+    }
+
+    .slz-block-team-01 .team-body .title + .position:before {
+        content: '-';
+        margin-right: 7px;
+    }
+
+    .slz-block-team-01 .slz-info-block .info-item:before {
+        color: #3b424d;
+    }
+
+    .slz-block-team-01 .slz-info-block .info-item:hover {
+        color: #c8ac48;
+    }
+
+    .slz-block-team-01 .team-body .description-wrapper {
+        padding: 0px 30px 0;
+        max-height: 0px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .slz-block-team-01 .team-body .description-wrapper .read-more {
+        font-size: 14px;
+        line-height: 1;
+        color: #304771;
+        border: none;
+        position: relative;
+    }
+
+    .slz-block-team-01 .team-body .description-wrapper .read-more:before {
+        position: absolute;
+        content: '';
+        height: 1px;
+        left: 50%;
+        right: 50%;
+        bottom: -2px;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .slz-block-team-01 .team-body .description-wrapper .read-more:after {
+        content: '\f178';
+        font-family: 'FontAwesome';
+        padding-left: 5px;
+    }
+
+    .slz-block-team-01 .team-body .description-wrapper .read-more:hover {
+        color: #c8ac48;
+    }
+
+    .slz-block-team-01 .team-body .description-wrapper .read-more:hover:before {
+        left: 0;
+        right: 0;
+        background-color: #c8ac48;
+    }
+
+    .slz-block-team-01 .team-body .description + .social-list .item {
+        margin-top: 0;
+    }
+
+    .slz-block-team-01 .description-wrapper + .social-list {
+        margin-top: 0;
+    }
+
+    .slz-block-team-01 .social-list {
+        padding: 20px 0;
+        background-color: #fafafa;
+        position: relative;
+        z-index: 10;
+    }
+
+    .slz-block-team-01 .social-list .item {
+        margin: 0 10px;
+        color: #c2c2c2;
+    }
+
+    .slz-block-team-01 .social-list .item i {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        line-height: 1;
+        margin: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .slz-block-team-01:hover .team-body .description-wrapper {
+        max-height: 150px;
+        padding: 25px 30px 0;
+        opacity: 1;
+    }
+ 
+/*========  End of Team List Layout 01  =========*/
+ 
+
+
+/*==============================================
+=            2. Team List Layout 02            =
+==============================================*/
+
+    .slz-team-wrapper-03 .slz-block-team-03 .col-right {
+        display: none;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-03 .col-left {
+        width: 100%;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .block-image {
+        display: none;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 {
+        background-color: transparent;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body {
+        border: none;
+        padding: 0;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .main-info {
+        font-size: 0;
+        color: #304771;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .title {
+        display: inline-block;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: inherit;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-03 .slz-info-block .mobile:before,
+    .slz-team-wrapper-03 .slz-block-team-03 .slz-info-block .email:before {
+        color: #3b424d;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .title:hover {
+        color: #c8ac48;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-03 .slz-info-block .mobile:hover,
+    .slz-team-wrapper-03 .slz-block-team-03 .slz-info-block .email:hover {
+        color: #c8ac48;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .position {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        color: inherit;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .title + .position {
+        margin-left: 5px;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .title + .position:before {
+        content: '-';
+        margin-right: 5px;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .description {
+        margin: 5px 0;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .read-more {
+        font-size: 14px;
+        border: none;
+        line-height: 1;
+        color: #304771;
+        position: relative;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .read-more:before {
+        position: absolute;
+        content: '';
+        height: 1px;
+        left: 50%;
+        right: 50%;
+        bottom: -2px;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .read-more:after {
+        content: '\f178';
+        font-family: 'FontAwesome';
+        margin-left: 5px;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .read-more:hover {
+        color: #c8ac48;
+    }
+
+    .slz-team-wrapper-03 .slz-block-team-02 .team-body .read-more:hover:before {
+        left: 0;
+        right: 0;
+        background-color: #c8ac48;
+    }
+
+    .slz-team-wrapper-03 .slide-nav {
+        position: relative;
+        bottom: auto;
+        margin: 35px 0 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .slz-team-wrapper-03 .slide-nav .slz-team-nav-03 {
+        margin-bottom: 60px;
+    }
+
+    .slz-team-wrapper-03 .slide-nav .slz-team-nav-03 .slick-dots {
+        bottom: -65px;
+    }
+
+    .slz-team-wrapper-03 .slz-team-nav-03 .team-img a {
+        position: relative;
+    }
+
+    .slz-team-wrapper-03 .slz-team-nav-03 .team-img a:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .slz-team-wrapper-03 .slz-team-nav-03 .team-img.slick-current a:before {
+        opacity: 0;
+    }
+
+    .slz-team-wrapper-03.slz-carousel-wrapper .carousel-overflow {
+        overflow: visible;
+    }
+
+    .slz-team-wrapper-03 .slick-arrow.btn-prev,
+    .slz-team-wrapper-03 .slick-arrow.btn-next {
+        display: none!important;
+    }
+
+/*=======  End of Team List Layout 02  =========*/
+
+
+/*===================================
+=            3. Team Tab            =
+===================================*/
+
+    .slz-team-tab .slz-tab {
+        text-align: center;
+    }
+
+    .slz-team-tab .slz-tab .tab-filter {
+        padding: 0;
+    }
+
+    .slz-team-tab .slz-tab .tab-filter li {
+        margin: 0 15px;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .slz-team-tab .slz-tab .tab-filter li:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 50%;
+        right: 50%;
+        background-color: #c8ac48;
+        height: 1px;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .slz-team-tab .slz-tab .tab-filter li.active .link,
+    .slz-team-tab .slz-tab .tab-filter li .link:hover {
+        color: #c8ac48;
+    }
+
+    .slz-team-tab .slz-tab .tab-filter li.active:before {
+        left: 0;
+        right: 0;
+    }
+
+    .slz-team-tab .slz-tab .tab-filter li .link {
+        text-transform: inherit;
+        color: #304771;
+    }
+
+/*=======  End of Team Tab  =======*/
+
+
+/*========================================
+=            4. Team Carousel            =
+========================================*/
+
+    .slz-block-team-04 .title,
+    .slz-block-team-04 .position {
+        color: #304771;
+    }
+
+    .slz-block-team-04 .title:hover, 
+    .slz-block-team-04 .title:focus {
+        color: #c8ac48;
+    }
+
+    .slz-block-team-04 .social-list .social-item .slz-icon {
+        background-color: #fcfcfc;
+    }
+
+    .slz-block-team-05 .team-content {
+        background-color: transparent;
+    }
+
+    .slz-block-team-05 .team-content:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #c8ac48;
+        opacity: 0.9;
+        z-index: -1;
+    }
+
+/*=====  End of Team Carousel  ======*/
+
+
+
+/*=====================================
+=            n. Responsive            =
+=====================================*/
+
+    @media screen and (max-width: 768px) {
+        .slz-team-wrapper-03 .slz-team-slider-03 {
+            margin-bottom: 0;
+        }
+
+        .slz-team-wrapper-03 .slz-team-slider-03 .slick-dots {
+            display: none !important;
+        }
+
+        .slz-team-wrapper-03 .slide-nav .slz-team-nav-03 {
+            margin-bottom: 40px;
+        }
+        .slz-team-wrapper-03 .slide-nav .slz-team-nav-03 .slick-dots {
+            bottom: -40px;
+        }
+    }
+
+/*=======  End of Responsive  =======*/

@@ -1,0 +1,247 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Service List Layout 1 
+ *       - 1.1. Service List 1
+ *       - 1.2. Service List 1 Background Hover
+ *       - 1.3. Service List 1 Style Icon
+ *       - 1.4. Service List 1 Style Icon Has Number
+ *       - 1.5. Service List 1 Style Image
+ *    2. Service List Layout 2
+ *
+ *
+ */
+
+ /*================================================
+ =            1. Service List Layout 1            =
+ ================================================*/
+
+    /*----------  1.1. Service List 1  ----------*/
+    .sc-service-list .slz-icon-box-1 {
+        position: relative;
+    }
+    .sc-service-list .slz-icon-box-1:before {
+        position: absolute;
+        content: '';
+        border-top: 1px solid #c8ac48;
+        border-bottom: 1px solid #c8ac48;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        z-index: -1;
+    }
+    .sc-service-list .slz-icon-box-1:after {
+        position: absolute;
+        content: '';
+        border-left: 1px solid #c8ac48;
+        border-right: 1px solid #c8ac48;
+        top: 50%;
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        z-index: -1;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-icon-image {
+        min-width: 0;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .title {
+        margin-bottom: 0;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .description {
+        margin-top: 5px;
+        margin-bottom: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info a.title:hover {
+        color: #c8ac48;
+    }
+    .sc-service-list .slz-icon-box-1:hover:before {
+        left: 0;
+        right: 0;
+    }
+    .sc-service-list .slz-icon-box-1:hover:after {
+        top: 0;
+        bottom: 0;
+    }
+    /*----------  1.2. Service List 1 Background Hover  ----------*/
+    .sc-service-list.background-hover .slz-icon-box-1 {
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+    .sc-service-list.background-hover .slz-icon-box-1:hover .wrapper-info .title,
+    .sc-service-list.background-hover .slz-icon-box-1:hover .wrapper-info .description {
+        color: #fff;
+    }
+    .sc-service-list.background-hover .slz-icon-box-1 .wrapper-info a.title:hover {
+        color: #c8ac48;
+    }
+
+    /*----------  1.3. Service List 1 Style Icon  ----------*/
+    .sc-service-list .slz-icon-box-1 {
+        border: 1px solid #f0f0f0;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .title {
+        font-size: 20px;
+        color: #304771;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .title:hover {
+        color: #747981;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .description {
+        color: #747981;
+        opacity: 1;
+        margin-bottom: 5px;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .read-more {
+        position: relative;
+        padding-bottom: 2px;
+        color: #c8ac48;
+        border: none;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .read-more:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        right: 100%;
+        height: 1px;
+        background-color: #c8ac48;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .read-more:hover {
+        color: #c8ac48;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .read-more:hover:before {
+        right: 0;
+    }
+    .sc-service-list .slz-icon-box-1 .wrapper-info .read-more:after {
+        font-family: 'FontAwesome';
+        content: '\f178';
+        padding-left: 5px;
+    }
+    /*----------  1.4. Service List 1 Style Icon Has Number  ----------*/
+    .sc-service-list.has_number .slz-icon-box-1 {
+        padding: 0 35px;
+        border: none;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:before,
+    .sc-service-list.has_number .slz-icon-box-1:after {
+        content: none;
+    }
+    .sc-service-list.has_number .slz-icon-box-1 .wrapper-info .read-more {
+        opacity: 0;
+        visibility: hidden;
+        bottom: -10px;
+        color: #c8ac48;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:hover .wrapper-info .read-more {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:hover {
+        padding: 35px;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:hover .title {
+        margin-top: 15px;
+    }
+    .sc-service-list.has_number .slz-icon-box-1 .icon-cell .number {
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:hover .icon-cell .number {
+        font-size: 0;
+        margin-bottom: 0;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:hover .icon-cell .number:before {
+        height: 0;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:hover .wrapper-icon .slz-icon {
+        color: #c8ac48;
+    }
+    .sc-service-list.has_number .slz-icon-box-1:hover .icon-cell,
+    .sc-service-list.has_number .slz-icon-box-1:hover .content-cell {
+        text-shadow: none;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    /*----------  1.5. Service List 1 Style Image  ----------*/
+    .sc-service-list.service-image .slz-icon-box-1 {
+        padding: 0;
+        border: none;
+        position: relative;
+        height: auto;
+    }
+    .sc-service-list.service-image .slz-icon-box-1:before,
+    .sc-service-list.service-image .slz-icon-box-1:after {
+        content: none;
+    }
+    .sc-service-list.service-image .slz-icon-box-1 .icon-cell {
+        padding: 0 30px;
+    }
+    .sc-service-list.service-image .slz-icon-box-1 .wrapper-icon-image {
+        position: relative;
+    }
+    .sc-service-list.service-image .slz-icon-box-1 .wrapper-icon-image:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 50%;
+        right: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+    .sc-service-list.service-image .slz-icon-box-1:hover .wrapper-icon-image:before {
+        left: 0;
+        right: 0;
+    }
+    .sc-service-list.service-image .slz-icon-box-1 .content-cell {
+        padding: 30px 50px 20px;
+        position: relative;
+    }
+    .sc-service-list.service-image .slz-icon-box-1 .content-cell:before {
+        position: absolute;
+        content: '';
+        top: -50px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 50px);
+        background-color: #fafafa;
+        z-index: -1;
+    }
+ 
+ /*=======  End of Service List Layout 1  =======*/
+ 

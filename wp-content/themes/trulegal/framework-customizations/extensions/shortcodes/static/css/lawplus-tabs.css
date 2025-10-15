@@ -1,0 +1,413 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Tab
+ *       - 1.1. Tab Horizontal Style 1
+ *       - 1.2. Tab Vertical
+ *       - 1.3. Tab Horizontal Style 2
+ *    2. Responsive
+ *
+ *
+ *
+ */
+
+
+
+/*==============================
+=            1. Tab            =
+==============================*/
+
+    /*----------  1.1. Tab Horizontal Style 1 ----------*/
+        .slz-tab .tab-list-wrapper,
+        .slz-isotope-nav, .slz-blog-detail .slz-isotope-nav, 
+        .tab-list-wrapper, .slz-blog-detail .tab-list-wrapper {
+            margin-bottom: 50px;
+        }
+
+        .slz-tab .tab-list {
+            padding-left: 0;
+            font-size: 0;
+            display: table;
+            width: 100%;
+            position: relative;
+        }
+
+        .slz-tab .tab-list li,
+        .slz-isotope-nav .tab-filter li {
+            position: relative;
+            display: table-cell;
+            min-width: 1%;
+            text-align: right;
+        }
+
+        .slz-tab .tab-list li:before,
+        .slz-isotope-nav .tab-filter li:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #ededed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .slz-tab .tab-list li .link,
+        .slz-isotope-nav .tab-filter li .link {
+            font-size: 14px;
+            padding-bottom: 0;
+            color: #dadada;
+            position: absolute;
+            top: -34px;
+            right: 0;
+            transform: translateX(50%);
+            -webkit-transform: translateX(50%);
+            -moz-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+            -o-transform: translateX(50%);
+            z-index: 3;
+        }
+
+        .slz-tab .tab-list li .link:after {
+            position: absolute;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border: 1px solid #b2b2b2;
+            background-color: #fff;
+            bottom: -10px;
+            right: 50%;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            transform: translate(50%, 50%);
+            -webkit-transform: translate(50%, 50%);
+            -moz-transform: translate(50%, 50%);
+            -ms-transform: translate(50%, 50%);
+            -o-transform: translate(50%, 50%);
+        }
+
+        .slz-tab .tab-list li.active:before {
+            background-color: #c8ac48;
+        }
+
+        .slz-tab .tab-list li.active .link {
+            border: none;
+            color: #c8ac48;
+        }
+
+        .slz-tab .tab-list li.active .link:after {
+            background-color: #c8ac48;
+            border-color: #c8ac48;
+        }
+
+    /*----------  1.2. Tab Vertical  ----------*/
+        .slz-tab-vertical .tab-list-wrapper {
+            width: 300px;
+            vertical-align: top;
+        }
+
+        .slz-tab-vertical .tab-list {
+            padding: 0;
+            display: block;
+            font-size: 0;
+        }
+
+        .slz-tab-vertical .tab-list li {
+            max-width: none;
+            margin-bottom: 10px;
+        }
+
+        .slz-tab-vertical .tab-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .slz-tab-vertical .tab-list li .link {
+            font-size: 14px;
+            color: #304771;
+            padding: 13px 0px;
+            display: block;
+            max-width: 200px;
+            border: 1px solid #d7d7d7;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+        }
+
+        .slz-tab-vertical .tab-list li .link:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 1px;
+            top: 50%;
+            right: -10px;
+            background-color: #c8ac48;
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+        }
+
+        .slz-tab-vertical .tab-list li.active .link {
+            max-width: 230px;
+            background-color: #c8ac48;
+            border-color: #c8ac48;
+            color: #fff;
+        }
+
+        .slz-tab-vertical .tab-list li.active .link:before {
+            width: 50px;
+            transition-delay: 0.3s;
+            -webkit-transition-delay: 0.3s;
+        }
+
+        .slz-tab-vertical .tab-content {
+            width: auto;
+        }
+
+    /*----------  1.3. Tab horizontal style 2  ----------*/
+        .slz-tab.style-horizontal-02 .tab-list:before,
+        .slz-isotope-nav .tab-filter:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: #ededed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li,
+        .slz-isotope-nav .tab-filter li {
+            display: inline-block;
+            text-align: center;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li:before,
+        .slz-isotope-nav .tab-filter li:before {
+            height: 2px;
+            width: auto;
+            left: 50%;
+            right: 50%;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li .link,
+        .slz-isotope-nav .tab-filter li .link {
+            padding: 0 30px;
+            font-size: 18px;
+            right: auto;
+            top: auto;
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+            color: #304771;
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li.active .link,
+        .slz-tab.style-horizontal-02 .tab-list li.active .link:hover,
+        .slz-isotope-nav .tab-filter li.active .link,
+        .slz-isotope-nav .tab-filter li.active .link:hover {
+            color: #50555e;
+        }
+        
+        .slz-tab.style-horizontal-02 .tab-list li .link:hover,
+        .slz-isotope-nav .tab-filter li .link:hover {
+            color: #c8ac48;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li.active:before,
+        .slz-isotope-nav .tab-filter li.active:before {
+            background-color: #c8ac48;
+            left: 0;
+            right: 0;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li .link:after,
+        .slz-isotope-nav .tab-filter li .link:after {
+            width: 0px;
+            height: 0px;
+            content: none;
+        }
+
+/*=======  End of Tab  =======*/
+
+
+/*======================================
+=            2.  Responsive            =
+======================================*/
+
+
+    @media screen and (max-width: 1024px) {
+        .slz-tab .tab-list li {
+            text-align: center;
+        }
+
+        .slz-tab .tab-list li .link {
+            position: relative;
+            top: auto;
+            right: auto;
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li .link, 
+        .slz-isotope-nav .tab-filter li .link {
+            padding: 0 20px;
+            font-size: 16px;
+        }
+    }    
+
+    @media screen and (max-width: 768px) {
+        
+    }
+    @media screen and (max-width: 767px) {
+        .slz-tab-vertical .tab-list-wrapper {
+            width: 250px;
+        }
+
+        .slz-tab-vertical .tab-list li .link {
+            max-width: 150px;
+        }
+
+        .slz-tab-vertical .tab-list li.active .link {
+            max-width: 175px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .slz-tab-vertical .tab-list-wrapper {
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .slz-tab-vertical .tab-list li {
+            display: inline-block;
+            margin: 0 15px 0;
+        }
+
+        .slz-tab-vertical .tab-list li:first-child {
+            margin-left: 0;
+        }
+
+        .slz-tab-vertical .tab-list li:last-child {
+            margin-right: 0;
+        }
+
+        .slz-tab-vertical .tab-list li .link {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .slz-tab-vertical .tab-list li .link:before {
+            top: -5px;
+            left: 50%;
+            right: 50%;
+            width: auto;
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+
+        .slz-tab-vertical .tab-list li.active .link {
+            color: #3b424d;
+            background-color: transparent;
+        }
+
+        .slz-tab-vertical .tab-list li.active .link:before {
+            left: 0;
+            right: 0;
+            width: auto;
+            height: 2px;
+            transition-delay: 0s;
+            -webkit-transition-delay: 0s;
+        }
+
+        .slz-tab-vertical .tab-content {
+            display: block;
+            padding-top: 15px;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list:before {
+            content: none;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list-wrapper {
+            margin-bottom: 0;
+        }
+
+        .slz-tab.style-horizontal-02 .tab-list li {
+            margin-bottom: 15px;
+            padding-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .block-label {
+            font-size: 0;
+        }
+
+        .block-label .text {
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px 15px;
+        }
+
+        .block-label .text.big {
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .block-quote-wrapper .block-quote {
+            font-size: 13px;
+        }
+
+        .block-quote-wrapper .block-quote p {
+            margin-bottom: 5px;
+            max-height: 50px;
+            overflow: hidden;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .slz-tab-vertical .tab-list li {
+            margin: 0 10px 15px;
+        }
+
+        .slz-tab-vertical .tab-list li .link {
+            font-size: 16px;
+        }
+        
+    }
+    @media screen and (max-width: 320px) {
+    }
+ 
+/*=======  End of  Responsive  =======*/
+ 

@@ -1,0 +1,74 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Category Style 1 
+ *    2. Category Style 2
+ *    3. Category Style 3
+ *
+ *
+ *
+ */
+
+/*----------  1. Category Style 1  ----------*/
+    .slz-categories .link {
+        border-bottom: 1px solid #efefef;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        color: #747981;
+    }
+    .slz-categories .link:last-child {
+        margin-bottom: 0;
+    }
+    .slz-categories .link .icons {
+        width: 30px;
+    }
+    .slz-categories .link .icons:before {
+        content: '\f10c';
+        font-size: 11px;
+    }
+    .slz-categories .link .badge {
+        font-size: 14px;
+        background-color: transparent;
+        padding: 0;
+        font-weight: inherit;
+        border-radius: 0;
+        line-height: 30px;
+        vertical-align: top;
+        color: inherit;
+    }
+    .slz-categories .link .badge:before {
+        content: '(';
+        margin-right: 2px;
+    }
+    .slz-categories .link .badge:after {
+        content: ')';
+        margin-left: 2px;
+    }
+    .slz-categories .link:hover {
+        color: #c8ac48;
+    }
+/*----------  2. Category Style 2 ----------*/
+    .slz-categories .two-column .link {
+        padding: 10px 0;
+        margin: 0 5px;
+        width: calc(50% - 10px);
+    }
+    .slz-categories .two-column .link:nth-child(-n + 2) {
+        padding-top: 0;
+    }
+/*----------  3. Category Style 3 ----------*/
+    .slz-categories2 .link {
+        border-bottom: 1px solid #efefef;
+    }
+    .slz-categories2 .link:last-child {
+        padding-bottom: 12px;
+    }
+    .slz-categories2 .link .icons:before {
+        content: '\f10c';
+    }
+    .slz-categories2 .link:hover {
+        color: #c8ac48;
+    }

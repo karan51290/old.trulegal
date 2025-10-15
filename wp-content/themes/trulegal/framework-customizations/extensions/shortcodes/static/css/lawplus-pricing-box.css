@@ -1,0 +1,259 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Pricing Box
+ *       - 1.1. Pricing Box General
+ *       - 1.2. Pricing Header
+ *       - 1.3. Pricing Footer
+ *       - 1.4. Pricing Body
+ *       - 1.5. Pricing Hover State
+ *    2. Pricing Plan
+ *       - 2.1. Four Column
+ *       - 2.2. Three Column
+ *       - 2.3. Two Column
+ *    3. Responsive
+ *
+ *
+ *
+ */
+
+/*======================================
+=            1. Pricing Box            =
+======================================*/
+
+    /*----------  1.1 Pricing Box General  ----------*/
+    .slz-pricing-table-01 {
+        background-color: #fafafa;
+        border: 2px solid #fafafa;
+        position: relative;
+    }
+    .slz-pricing-table-01:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid #c8ac48;
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    /*----------  1.2 Pricing Header  ----------*/
+    .slz-pricing-table-01 .pricing-header {
+        margin-bottom: 25px;
+    }
+    .slz-pricing-table-01 .pricing-header .title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: #304771;
+    }
+    .slz-pricing-table-01 .pricing-section {
+        font-size: 62px;
+        font-weight: 400;
+        color: #747981;
+        line-height: 1;
+    }
+    .slz-pricing-table-01 .pricing-section .unit {
+        font-size: 16px;
+        font-weight: 400;
+        color: inherit;
+        top: 5px;
+    }
+    .slz-pricing-table-01 .pricing-section .per {
+        font-size: 14px;
+        color: inherit;
+        font-weight: 400;
+        margin-left: -5px;
+    }
+    .slz-pricing-table-01 .pricing-section .sub-title {
+        font-size: 14px;
+        color: inherit;
+        font-weight: 400;
+        margin-top: 35px;
+        line-height: 26px;
+    }
+    /*----------  1.3. Pricing Footer  ----------*/
+    .slz-pricing-table-01 .pricing-footer {
+        margin-top: 0;
+    }
+    .slz-pricing-table-01 .pricing-footer .btn {
+        background-color: #304771;
+        border: 1px solid #304771;
+        padding: 0;
+        line-height: 40px;
+        text-transform: uppercase;
+        width: 230px;
+    }
+    .slz-pricing-table-01 .pricing-footer .btn:hover {
+        background-color: transparent;
+        color: #c8ac48;
+        border-color: #c8ac48;
+    }
+    .slz-pricing-table-01 .pricing-footer .btn:active {
+        box-shadow: none;
+    }
+    /*----------  1.4. Pricing Body  ----------*/
+    .slz-pricing-table-01 .pricing-body {
+        margin-top: 30px;
+    }
+    
+    .slz-pricing-table-01 .pricing-body .pricing-option {
+        font-size: 12px;
+        color: #747981;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 15px;
+        line-height: 1;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .slz-pricing-table-01 .pricing-body .pricing-option:last-child {
+        margin-bottom: 0;
+    }
+    /*----------  1.5. Pricing Hover State  ----------*/
+    .slz-pricing-table-01.active,
+    .slz-pricing-table-01:hover {
+        box-shadow: none;
+        background-color: transparent;
+        border-color: #c8ac48;
+    }
+    .slz-pricing-table-01.active:before,
+    .slz-pricing-table-01:hover:before {
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        bottom: -8px;
+        opacity: 0.5;
+    }
+    .slz-pricing-table-01.active .pricing-footer .btn,
+    .slz-pricing-table-01:hover .pricing-footer .btn {
+        background-color: #c8ac48;
+        border-color: #c8ac48;
+    }
+    .slz-pricing-table-01 .pricing-footer .btn:hover {
+        background-color: transparent;
+        color: #c8ac48;
+    }
+
+    .slz-pricing-table-01 .pricing-label {
+        background-color: #c8ac48;
+    }
+    
+
+/*=======  End of Pricing Box  =======*/
+
+
+/*=======================================
+=            2. Pricing Plan            =
+=======================================*/
+    
+    /*----------  2.1. Four Column  ----------*/
+    .slz-pricing-plan-01 .col-md-3 .slz-pricing-table-01 {
+        padding: 20px;
+    }
+    .slz-pricing-plan-01 .col-md-3 .slz-pricing-table-01 .pricing-footer .btn {
+        width: 180px;
+    }
+
+    /*----------  2.2. One Column  ----------*/
+    .slz-pricing-plan-01 .col-md-12 {
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+    }
+
+
+
+/*=======  End of Pricing Plan  =======*/
+
+
+/*=====================================
+=            3. Responsive            =
+=====================================*/
+
+    @media screen and (max-width: 1024px) {
+        .slz-pricing-table-01 .pricing-section {
+            font-size: 45px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .slz-pricing-plan-01 .col-md-3 {
+            margin-top: 30px;
+        }
+        .slz-pricing-plan-01 .col-md-3:nth-child(-n + 2) {
+            margin-top: 0;
+        }
+        .slz-pricing-plan-01 .col-md-4 .slz-pricing-table-01 .pricing-footer .btn {
+            width: 150px;
+        }
+        .slz-pricing-plan-01 .col-md-12 {
+            width: 75%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .slz-pricing-plan-01 .col-md-3 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .slz-pricing-table-01 .pricing-header .title {
+            margin-bottom: 15px;
+        }
+        .slz-pricing-table-01 .pricing-section .sub-title {
+            margin-top: 25px;
+        }
+        .slz-pricing-plan-01 .col-md-4 {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        .slz-pricing-plan-01 .col-md-4:first-child {
+            margin-top: 0;
+        }
+        .slz-pricing-plan-01 .col-md-6 {
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        .slz-pricing-plan-01 .col-md-6:first-child {
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .slz-pricing-plan-01 .col-md-4 {
+            width: 75%;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .slz-pricing-plan-01 .col-md-3 {
+            width: 75%;
+            display: block;
+            margin: 0 auto 30px auto;
+        }
+        .slz-pricing-plan-01 .col-md-3:nth-child(-n + 2) {
+            margin-top: 30px;
+        }
+        .slz-pricing-plan-01 .col-md-3:nth-child(-n + 1) {
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        .slz-pricing-plan-01 .col-md-3,
+        .slz-pricing-plan-01 .col-md-4,
+        .slz-pricing-plan-01 .col-md-6,
+        .slz-pricing-plan-01 .col-md-12 {
+            width: 100%;
+        }
+    }
+
+/*=======  End of Responsive  =======*/

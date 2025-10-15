@@ -1,0 +1,97 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Contact
+ *    2. List Contact
+ *    3. Responsive
+ *
+ *
+ *
+ *
+ */
+
+/*----------  1. Contact  ----------*/
+    .slz-contact-01 .contact-title {
+        color: #304771;
+        font-family: 'Libre Baskerville', serif;
+        text-transform: capitalize;
+    }
+    .slz-contact-01 .contact-content {
+        color: #fff;
+    }
+    .slz-contact-01 .contact-title .slz-icon {
+    }
+    .slz-contact-01 .contact-title .text {
+    }
+/*----------  2. List Contact  ----------*/
+    .slz-list-contact-01 {
+        background-color: #c8ac48;
+        display: table;
+        width: calc(100% + 30px);
+    }
+    .slz-list-contact-01 .item {
+        position: relative;
+        display: table-cell;
+    }
+    .slz-list-contact-01 .item + .item:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 15%;
+        bottom: 15%;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+/*----------  3. Responsive  ----------*/
+    @media screen and (max-width: 768px) {
+        .slz-list-contact-01.slz-list-block.slz-column-3 > .item {
+            width: 33.3333% 
+        }
+        .slz-list-contact-01.slz-list-block.slz-column-3 .item:nth-child(-n + 3) {
+            margin-top: 0;
+        }
+        .slz-contact-01 {
+            padding: 20px;
+        }
+        .slz-contact-01 .contact-content {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .slz-list-contact-01 {
+            width: calc(100% + 20px);
+        }
+        .slz-contact-01 .contact-title .slz-icon {
+            display: block;
+            padding: 0;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .slz-list-contact-01 {
+            width: 75%;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+        .slz-list-contact-01.slz-list-block.slz-column-3 > .item {
+            width: 100%;
+            display: block;
+        }
+        .slz-list-contact-01 .item + .item:before {
+            top: 0;
+            bottom: auto;
+            left: 15%;
+            right: 15%;
+            width: auto;
+            height: 1px;
+        }
+    }
+    @media screen and (max-width: 414px) {
+        .slz-list-contact-01 {
+            width: 100%;
+        }
+    }
+ 

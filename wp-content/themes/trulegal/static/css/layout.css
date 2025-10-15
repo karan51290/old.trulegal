@@ -1,0 +1,908 @@
+    /*
+     *
+     *    [Table of contents]
+     *
+     *    [&. Content / #key]
+     *    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+     *
+     *    Summary:
+     *
+     *    0. Global Style
+     *      - 0.1. Global Slick Dots
+     *      - 0.2. Global Slick Arrow
+     *    1. Social
+     *    2. Article Template
+     *    3. Block Item
+     *      - 3.1. Block Item 01
+     *    4. Contact Form 7
+     *      - 4.1. Contact Form
+     *      - 4.2. Contact Form Alt
+     *      - 4.3. Contact Form Full Width
+     *      - 4.4. Default Element
+     *    5. Subcribe
+     *    6. Footer
+     *    7. Template Higher Top
+     *    8. Custom CSS
+     *
+     *
+     */
+
+/*=======================================
+=            0. Global Style            =
+=======================================*/
+    
+    /*----------  0.1. Global Slick Dots  ----------*/
+        .slick-dots li {
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            margin: 0 2px;
+        }
+
+        .slick-dots li button,
+        .slick-dots li button:before {
+            width: inherit;
+            height: inherit;
+            line-height: inherit;
+            color: #304771;
+        }
+
+        .slick-dots li button:before {
+            font-size: 10px;
+        }
+
+        .slick-dots li.slick-active button:before {
+            font-size: 12px;
+            color: #304771;
+        }
+
+        .dark .slick-dots li button:before {
+            opacity: 1;
+            color: #2a4069;
+        }
+
+        .dark .slick-dots li.slick-active button:before {
+            opacity: 1;
+            color: #6e809f;
+        }
+
+    /*----------  0.2. Global Slick Arrow  ----------*/
+        .slick-arrow {
+            font-size: 30px;
+        }
+
+        #theme-setting .purchase-wrap .purchase-btn {
+            font-weight: 400;
+            padding: 0 20px;
+            color: #fff;
+            background-color: #c8ac49;
+            border: 1px solid #c8ac49;
+            min-width: 170px;
+            height: 45px;
+            line-height: 43px;
+            border-radius: 0;
+        }
+
+        #theme-setting .purchase-wrap .purchase-btn:hover {
+            border-color: #304771;
+            color: #304771;
+            background-color: transparent;
+        }
+ 
+
+/*=======  End of Global Style  =======*/
+ 
+
+/*=================================
+=            1. Social            =
+=================================*/
+ 
+ 	.social a,
+    .social-list a {
+        color: #989b9f;
+        background-color: transparent;
+        min-width: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 10px;
+        position: relative;
+        font-size: 18px;
+    }
+
+    .social a i,
+    .social-list a i {
+        position: relative;
+        z-index: 10;
+        color: inherit;
+    }
+
+
+    .social a:hover,
+    .social-list a:hover {
+        color: #c8ac48;
+    }
+    
+    .slz-social-share {
+        display: inline-block;
+        text-align: right;
+        float: right;
+    }
+
+    .slz-social-share .title {
+        color: #7a7a7a;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    .social .share-facebook:hover,
+    .social-list .facebook:hover {
+        color: #365899;
+    }
+
+    .social .share-twitter:hover,
+    .social-list .twitter:hover {
+        color: #1da1f2;
+    }
+
+    .social .share-google-plus:hover,
+    .social-list .google-plus:hover,
+    .social .share-google:hover,
+    .social-list .google:hover {
+        color: #d73d32;
+    }
+
+    .social .share-pinterest:hover,
+    .social-list .pinterest:hover {
+        color: #bd081c;
+    }
+
+    .social .share-vimeo:hover,
+    .social-list .vimeo:hover {
+        color: #00adef;
+    }
+
+    .social .share-skype:hover,
+    .social-list .skype:hover {
+        color: #00aff0;
+    }
+
+    .social .share-youtube:hover,
+    .social-list .youtube:hover {
+        color: #e62117;
+    }
+
+    .social .share-rss:hover,
+    .social-list .rss:hover {
+        color: #f36f24;
+    }
+
+    .social .share-delicious:hover,
+    .social-list .delicious:hover {
+        color: #2a96ff;
+    }
+
+    .social .share-flickr:hover,
+    .social-list .flickr:hover {
+        color: #ff0084;
+    }
+
+    .social .share-lastfm:hover,
+    .social-list .lastfm:hover {
+        color: #b90000;
+    }
+
+    .social .share-linkedin:hover,
+    .social-list .linkedin:hover {
+        color: #0077b5;
+    }
+
+    .social .share-tumblr:hover,
+    .social-list .tumblr:hover {
+        color: #36465d;
+    }
+
+    .social .share-deviantart:hover,
+    .social-list .deviantart:hover {
+        color: #05cc47;
+    }
+
+    .social .share-git:hover,
+    .social-list .git:hover {
+        color: #f34f29;
+    }
+
+    .social .share-instagram:hover,
+    .social-list .instagram:hover {
+        color: #895a4d;
+    }
+
+    .social .share-soundcloud:hover,
+    .social-list .soundcloud:hover {
+        color: #ff5500;
+    }
+
+    .social .share-stumbleupon:hover,
+    .social-list .stumbleupon:hover {
+        color: #eb4924;
+    }
+
+    .social .share-behance:hover,
+    .social-list .behance:hover {
+        color: #005cff;
+    }
+
+    .social .share-tripadvisor:hover,
+    .social-list .tripadvisor:hover {
+        color: #589442;
+    }
+
+    .social .share-vk:hover,
+    .social-list .vk:hover {
+        color: #507299;
+    }
+
+    .social .share-foursquare:hover,
+    .social-list .foursquare:hover {
+        color: #f94877;
+    }
+
+    .social .share-xing:hover,
+    .social-list .xing:hover {
+        color: #add000;
+    }
+
+    .social .share-weibo:hover,
+    .social-list .weibo:hover {
+        color: #e6162d;
+    }
+
+    .social .share-odnoklassniki:hover,
+    .social-list .odnoklassniki:hover {
+        color: #f58220;
+    }
+ 
+/*=======  End of Social  =======*/
+ 
+
+/*===========================================
+=            2. Article Template            =
+===========================================*/
+ 
+ 	.slz-block-item-01 {
+ 		box-shadow: none;
+ 	}
+
+    .slz-block-item-01 .block-info {
+        font-style: italic;
+    }
+
+    .slz-list-block.slz-column-1 .slz-block-item-01.style-2 .block-title {
+        font-size: 24px;
+    }
+ 
+/*=======  End of Article Template  =======*/
+
+
+/*=====================================
+=            3. Block Item            =
+=====================================*/
+ 
+    /*----------  3.1. Block Item 01  ----------*/
+        .block-title:hover, 
+        .block-title:focus {
+            color: #c8ac48;
+        }
+
+        .slz-block-item-01 .block-content {
+            padding: 25px 30px;
+        }
+
+        .slz-block-item-01:hover .block-image .link:after {
+            left: 0;
+            right: 0;
+        }
+
+        .block-image .link:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            right: 50%;
+            width: auto; 
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+        }
+
+        .block-title {
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .block-category {
+            color: #c8ac48;
+        }
+
+        .blog-detail-wrapper .block-image.has-quote .link:after {
+            width: 100%;
+            top:0;
+            left: 0;
+        }
+ 
+/*=======  End of Block Item  =======*/
+ 
+
+/*=========================================
+=            4. Contact Form 7            =
+=========================================*/
+
+    /*----------  4.1. Contact Form  ----------*/
+        .wpcf7 form {
+            position: relative;
+            font-size: 0;
+        }
+
+        .wpcf7 .cf7-form-control {
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .wpcf7 .cf7-form-control.left,
+        .wpcf7 .cf7-form-control.right {
+            width: calc(50% - 8px);
+            display: inline-block;
+        }
+
+        .wpcf7 .cf7-form-control.left {
+            margin-right: 6px;
+        }
+
+        .wpcf7 .cf7-form-control.right {
+            margin-left: 6px;
+        }
+
+        .wpcf7 .cf7-form-control > span {
+            display: block;
+            width: 100%;
+        }
+
+        .wpcf7 .cf7-form-control input {
+            width: 100%;
+            border: 1px solid #304771;
+            padding: 10px 20px;
+            background-color: transparent;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-moz-transition: all 0.3s ease;
+        }
+
+        .wpcf7 .cf7-form-control input:focus,
+        .wpcf7 .cf7-form-control textarea:focus {
+            border-color: #c8ac48;
+        }
+
+        .wpcf7 .cf7-form-control.textarea {
+            margin-bottom: 30px;
+        }
+
+        .wpcf7 .cf7-form-control textarea {
+            border: 1px solid #304771;
+            padding: 5px 20px;
+            color: #9da3ad;
+            resize: vertical;
+            width: 100%;
+            height: 40px;
+            background-color: transparent;
+           /* transition: background-color 0.3s ease;
+            -webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-moz-transition: background-color 0.3s ease;*/
+        }
+
+        .wpcf7 .cf7-btn-submit-wrapper {
+            text-align: center;
+        }
+
+        .wpcf7 .cf7-btn-submit {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-moz-transition: all 0.5s ease;
+        }
+
+        .wpcf7 .cf7-btn-submit input {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 0 35px;
+            background-color: #c8ac48;
+            border: 1px solid #c8ac48;
+            line-height: 40px;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -o-moz-transition: all 0.3s ease;
+        }
+
+        .wpcf7 .cf7-btn-submit input:hover {
+            background-color: transparent;
+            color: #c8ac48;
+        }
+
+        .wpcf7 .cf7-btn-submit:before {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            top: 100%;
+            left: 50%;
+            right: 50%;
+            height: 10px;
+            opacity: 0;
+            background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+        }
+
+        .wpcf7 .cf7-btn-submit:after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 10px;
+            bottom: 0;
+            left: 0;
+        }
+
+        .wpcf7 .cf7-btn-submit:hover,
+        .wpcf7 .cf7-btn-submit:focus {
+            background-color: transparent;
+            border-color: #c8ac49;
+            color: #c8ac49;
+            transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            -moz-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            -o-transform: translateY(-5px);
+        }
+
+        .wpcf7 .cf7-btn-submit:hover:before,
+        .wpcf7 .cf7-btn-submit:focus:before {
+            left: 5%;
+            right: 5%;
+            opacity: 1;
+            transform: translateY(5px);
+            -webkit-transform: translateY(5px);
+            -moz-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+            -o-transform: translateY(5px);
+        }
+
+        .wpcf7 .cf7-btn-submit:hover:after,
+        .wpcf7 .cf7-btn-submit:focus:after {
+            bottom: -10px;
+        }
+
+    /*----------  4.2. Contact Form Alt  ----------*/
+        .wpcf7 .cf7-form-control.input-alt {
+            width: calc(33.33333%);
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt.first {
+            margin-left: 0;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt.last {
+            margin-right: 0;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt input {
+           /* background-color: #f9f9f9;*/
+            border-color: #7a7878;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt input:focus,
+        .wpcf7 .cf7-form-control.textarea-alt textarea:focus {
+           /* background-color: #c8ac48;*/
+            color: #000;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt input:focus::-webkit-input-placeholder,
+        .wpcf7 .cf7-form-control.textarea-alt textarea:focus::-webkit-input-placeholder {
+            color: #fff;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt input:focus::-moz-placeholder,
+        .wpcf7 .cf7-form-control.textarea-alt textarea:focus::-moz-placeholder {
+            color: #fff;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt input:focus::-ms-input-placeholder,
+        .wpcf7 .cf7-form-control.textarea-alt textarea:focus::-ms-input-placeholder {
+            color: #fff;
+        }
+
+        .wpcf7 .cf7-form-control.input-alt input:focus:-moz-input-placeholder,
+        .wpcf7 .cf7-form-control.textarea-alt textarea:focus:-moz-input-placeholder {
+            color: #fff;
+        }
+
+        .wpcf7 .cf7-form-control.textarea-alt textarea {
+            /*background-color: #f9f9f9;*/
+            border-color: #181818;
+            height: 130px;
+        }
+
+        .wpcf7 .cf7-btn-submit.btn-alt input {
+            background-color: #304771;
+            border-color: #304771;
+        }
+
+        .wpcf7 .cf7-btn-submit.btn-alt input:hover {
+            color: #304771;
+            background-color: #fff;
+        }
+
+    /*----------  4.3. Contact Form Full Width  ----------*/
+        .wpcf7 .cf7-form-control.full-width {
+            width: 100%;
+            margin: 0 0 20px;
+        }
+
+    /*----------  4.4. Default Element  ----------*/
+        .wpcf7 .wpcf7-not-valid-tip {
+        }
+
+        div.wpcf7 .ajax-loader {
+            position: absolute;
+            top: 50%;
+            right: auto;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+        }
+
+        div.wpcf7-validation-errors {
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+/*=======  End of Contact Form 7  =======*/
+
+/*=========================================
+=            5. Subscribe                 =
+=========================================*/
+    .banner-subcribe.slz-banner-01 {
+        background-color: #c8ac48;
+        text-align: left;
+    }
+
+    .banner-subcribe.slz-banner-01 .content-wrapper {
+        padding: 50px 0;
+    }
+
+    .banner-subcribe .subcribe-info {
+        width: 80%;
+        float: left;
+    }
+
+    .banner-subcribe .subcribe-info h1.title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    .banner-subcribe .subcribe-info .description {
+        color: #f7efd1;
+    }
+
+    .banner-subcribe .subcribe-info .description p {
+        margin-bottom: 0;
+    }
+
+    .banner-subcribe .slz-btn {
+        float: right;
+        margin-top: 9px;
+        background-color: #304771;
+        border-color: #304771;
+    }
+
+    .banner-subcribe .slz-btn:hover,
+    .banner-subcribe .slz-btn:focus {
+        background-color: transparent;
+        color: #304771;
+        border-color: #304771;
+    }
+
+/*=======  End of Subscribe  ========*/
+
+
+/*=========================================
+=            6. Footer                    =
+=========================================*/
+    .slz-footer-top {
+        padding: 80px 0 50px;
+        border-bottom: 1px solid #2c3340;
+    }
+
+    .slz-footer-top .slz-widget-about-us .widget-content {
+        color: #a7aeba;
+    }
+
+    .slz-footer-main {
+        padding: 50px 0;
+    }
+
+    .slz-footer-main .slz-widget ul li:last-child {
+        padding-bottom: 0;
+    }
+
+    .slz-footer-main .slz-widget.widget_nav_menu ul li a {
+        border: none;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    .slz-footer-main .slz-widget-material-download .widget-content .slz-btn {
+        color: #7a7a7a;
+    }
+
+    .slz-widgets.slz-dark .slz-footer-main .slz-widget-post-slider .slz-block-item-01,
+    .slz-widgets.slz-dark .slz-footer-main .slz-widget-post-slider .slz-block-item-01 .block-content {
+        background-color: transparent;
+    }
+
+    .slz-widgets.slz-dark .slz-footer-main .slz-widget-post-slider .slz-carousel-wrapper .slick-arrow {
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .slz-widgets.slz-dark .slz-footer-main .slz-widget-post-slider .slz-carousel-wrapper .slick-arrow:hover {
+        color: #c8ac49;
+        border-color: #c8ac49;
+        background-color: transparent;
+    }
+
+    .slz-footer-bottom {
+        padding: 20px 0;
+    }
+
+    .slz-wrapper-footer .text-c .slz-widget-about-us .slz-logo {
+        left: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+
+/*=======  End of Footer  ========*/
+
+
+
+/*==============================================
+=            7. Template Higher Top            =
+==============================================*/
+
+    .template-higher-top {
+        margin-top: -100px;
+    }
+
+    .template-sidebar-full #page-content,
+    .template-sidebar-full #page-sidebar {
+        width: 100%;
+    }
+
+    .template-sidebar-full #page-sidebar {
+        margin-top: 50px;
+    }
+
+
+    .template-sidebar-full #page-sidebar {
+        width: calc(100% + 30px);
+    }
+
+    .template-sidebar-full #page-sidebar .slz-widgets {
+        font-size: 0;
+    }
+    
+    .template-sidebar-full #page-sidebar .slz-widget {
+        width: 33.33%;
+        padding: 0 15px;
+        margin-top: 60px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .template-sidebar-full #page-sidebar .slz-widget:nth-child(-n + 3) {
+        margin-top: 0;
+    }
+
+/*=======  End of Template Higher Top  =======*/
+    
+
+
+/*=====================================
+=            8. Custom CSS            =
+=====================================*/
+
+    .entry-content ul.slz-list {
+        padding-left: 0;
+    }
+
+    .slz-list .slz-icon {
+        color: #acb1b9;
+    }
+
+    .slz-block-video .title {
+        width: 100%;
+        max-width: 770px;
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        top: auto;
+        bottom: calc(50% + 50px);
+        transform: translate(-50%, 0);
+        font-size: 40px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .sc-video.slz-block-video .img-full {
+        width: 100%;
+        height: auto;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    .slz-block-video .btn-play .icons {
+        border: 1px solid #fff;
+        color: #c8ac49;
+        background-color: rgba(255,255,255, 0.1);
+    }
+
+    .slz-block-video .btn-play:after {
+        position: relative;
+        margin-left: 10px;
+        top: 50%;
+        content: 'WATCH NOW';
+        min-width: 100px;
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: rgba(255,255,255,0.9);
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+    }
+
+    .slz-banner-01 .content-wrapper {
+        padding: 100px 60px;
+    }
+
+    .vc_row-has-fill > .vc_column_container>.vc_column-inner .slz-banner-01 .content-wrapper{
+        padding-top: 65px;
+    }
+
+    .slz-banner-01 .title {
+        line-height: 1.2;
+        font-size: 38px;
+    }
+
+    .slz-carousel-mockup .image-title {
+        max-height: 32px;
+        bottom: 14px;
+    }
+
+    .slz-image-carousel .btn {
+        color: #fff;
+    }
+
+    .slz-carousel-mockup .btn {
+        color: #304771;
+    }
+
+    .list-layout .slz-block-item-01.slz-format-quote .block-image .link:after, 
+    .list-layout .slz-block-item-01.slz-format-audio .block-image .link:after, 
+    .list-layout .slz-block-item-01.slz-format-video .block-image .link:after, 
+    .list-layout .slz-block-item-01.slz-format-gallery .block-image .link:after, 
+    .slz-list-block.slz-column-4 .slz-block-item-01.slz-format-quote .block-image .link:after, 
+    .slz-list-block.slz-column-4 .slz-block-item-01.slz-format-audio .block-image .link:after, 
+    .slz-list-block.slz-column-4 .slz-block-item-01.slz-format-video .block-image .link:after, 
+    .slz-list-block.slz-column-4 .slz-block-item-01.slz-format-gallery .block-image .link:after,
+    .slz-block-item-01 .block-image.has-quote .link:after {
+        left: 0;
+        right: 0;
+    }
+
+    .slz-template-03 .block-label {
+        font-size: 0;
+    }
+
+    .slz-template-03 .block-label .text {
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 15px;
+    }
+
+    .slz-template-03 .block-label .text.big {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .slz-template-03 .block-image.has-gallery .featured-carousel-item .wrapper-image:before {
+        padding-top: 120%;
+    }
+
+    .slz-video-modal .modal-body .close {
+        background-color: #c8ac48;
+    }
+
+    .slz-author-detail .content-wrapper .name {
+        color: #304771;
+    }
+
+    .slz-author-detail .content-wrapper .name:hover {
+        color: #c8ac48;
+    }
+
+    .slz-author-detail .content-wrapper .info-wrapper ul li .link {
+        color: #c8ac48;
+    }
+
+    .slz-author-detail .content-wrapper .info-wrapper ul li + li:before {
+        left: -4px;
+    }
+
+    .coming-soon .main-count-wrapper .main-count {
+        padding: 75px 0;
+        background-color: #c8ac48;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+    }
+
+    .coming-soon .main-count-wrapper .time {
+        color: #fff;
+    }
+
+    .coming-soon .main-count-wrapper .time .count {
+        display: block;
+    }
+
+    .coming-soon .main-count-wrapper .stat-label {
+        margin-top: 10px;
+        color: #fff;
+    }
+
+/*======  End of Custom CSS  =======*/

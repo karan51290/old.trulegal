@@ -1,0 +1,65 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Progress Bar
+ *       - 1.1. General Progress Bar
+ *       - 1.2. Progress Bar Style 5
+ *
+ *
+ *
+ */
+
+ /*=======================================
+ =            1. Progress Bar            =
+ =======================================*/
+
+    /*----------  1.1. General Progress Bar  ----------*/
+    .slz-progress-bar-01 {
+        padding: 10px 0;
+    }
+    .slz-progress-bar-01:first-child {
+        padding-top: 0;
+    }
+    .slz-progress-bar-01:last-child {
+        padding-bottom: 0;
+    }
+    .slz-progress-bar-01 .progress-title {
+        color: #3b424d;
+    }
+    .slz-progress-bar-01 .percent {
+        color: #3b424d;
+        font-weight: 400;
+    }
+    .slz-progress-bar-01 .progress {
+        border-radius: 0;
+        height: 10px;
+        box-shadow: none;
+    }
+    .slz-progress-bar-01 .progress-bar {
+        border-radius: 0;
+        background-image: -webkit-linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+        background-image: -o-linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+        background-image: linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+        -webkit-background-size: 40px 40px;
+        background-size: 40px 40px;
+        background-color: #cdb45a
+    }
+    /*----------  1.2. Progress Bar Style 5 ----------*/
+    .slz-progress-bar-01.style-5 {
+        padding: 0;
+    }
+    .slz-progress-bar-01.style-5 .progress-title {
+        line-height: 1;
+        margin-bottom: 5px;
+        margin-top: 30px;
+    }
+    .slz-progress-bar-01.style-5 .progress-title .percent {
+        margin-left: 0;
+    }
+ 
+ /*=======  End of Progress Bar  =======*/
+
+ 

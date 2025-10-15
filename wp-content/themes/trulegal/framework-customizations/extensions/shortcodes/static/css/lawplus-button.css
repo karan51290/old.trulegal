@@ -1,0 +1,99 @@
+/*
+ *
+ *    [Table of contents]
+ *
+ *    Summary:
+ *
+ *    1. Button
+ *    2. Button Box Shadow
+ *    3. Responsive
+ *
+ *
+ *
+ */
+
+/*----------  1. Button  ----------*/
+
+    .slz-btn {
+        font-weight: 400;
+        padding: 0 20px;
+        background-color: #c8ac49;
+        border-color: #c8ac49;
+        min-width: 170px;
+        height: 45px;
+        line-height: 43px;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .slz-btn:before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 50%;
+        right: 50%;
+        height: 10px;
+        opacity: 0;
+        background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+    .slz-btn:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 10px;
+        bottom: 0;
+        left: 0;
+    }
+    .slz-btn:hover,
+    .slz-btn:focus {
+        background-color: transparent;
+        border-color: #c8ac49;
+        color: #c8ac49;
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+    }
+    .slz-btn:hover:before,
+    .slz-btn:focus:before {
+        left: 5%;
+        right: 5%;
+        opacity: 1;
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+    }
+    .slz-btn:hover:after,
+    .slz-btn:focus:after {
+        bottom: -10px;
+    }
+
+/*----------  2. Button Box Shadow  ----------*/
+    .slz-btn.box-shadow:hover,
+    .slz-btn.box-shadow:focus {
+        box-shadow: none;
+    }
+
+/*----------  3. Responsive  ----------*/
+    @media screen and (max-width: 480px) {
+        .slz-btn {
+            display: block;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        .slz-btn + .slz-btn {
+            margin-left: auto;
+        }
+    }
